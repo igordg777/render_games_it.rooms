@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .game {
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+        }
+
+        #container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .card {
+            height: 250px !important;
+            width: 300px !important;
+        }
+
+        .logo {
+            height: 30px;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .viewSearch {
+            display: none;
+        }
+
+        .mainInfo {
+            margin: 0 auto !important;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <title>it.rooms videogames</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <img src="./5956527.webp" alt="" class="logo">
+
+            <a class="navbar-brand" href="https://it-rooms.ru/">Сайт</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://taplink.cc/it.rooms">Taplink
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="" id="mediaMenu">
+
+                <input class="form-control me-sm-2" id="inputSearch" type="text" placeholder="Search">
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="mainInfo">
+        <h1>IT.ROOMS</h1>
+        <h2>Список игр для PS4</h2>
+        <h3>Всего игр: <span id="count"></span></h3>
+    </div>
+
+    <fieldset>
+        <legend class="mt-4">Фильтры</legend>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="players">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Игры для двоих и более игроков</label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="disks">
+            <label class="form-check-label" for="flexSwitchCheckChecked">Только на диске</label>
+        </div>
+    </fieldset>
+
+    <div id="container"></div>
+    <script src="./games.js"></script>
+    <script src="./index.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
